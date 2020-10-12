@@ -48,6 +48,7 @@ pipeline {
                docker-compose down
             """)
          }
+      }
      stage('Push Container') {
         steps {
            echo "Workspace is $WORKSPACE"
@@ -60,7 +61,6 @@ pipeline {
               }
            }
         }
-     }
-    }     
+     }  
   }
 }
